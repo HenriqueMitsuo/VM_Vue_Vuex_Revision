@@ -22,3 +22,21 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## VSCODE SETTINGS
+
+```json
+    //! VUE MASTERY COURSE
+    "eslint.run": "onSave",
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vetur.validation.template": false,
+    "eslint.validate": [
+        "vue",
+        "html",
+        "javascript", 
+    ],
+    //! "eslint.autoFixOnSave": true, DEPRECATED
+    "editor.codeActionsOnSave": {"source.fixAll.eslint": true},
+    "editor.formatOnSave": true,`
