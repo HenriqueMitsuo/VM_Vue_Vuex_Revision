@@ -231,6 +231,24 @@
       "date": "",
       "time": "5:00",
       "attendees": []
+    },
+    {
+      "id": 6834601,
+      "user": {
+        "id": "abc123",
+        "name": "John Doe"
+      },
+      "category": "community",
+      "organizer": {
+        "id": "abc123",
+        "name": "John Doe"
+      },
+      "title": "1",
+      "description": "2",
+      "location": "3",
+      "date": "2020-04-17T20:56:00.000Z",
+      "time": "20:00",
+      "attendees": []
     }
   ]
 }
