@@ -1,49 +1,89 @@
 {
-    "events": [
-        {
-            "id": 5928101,
-            "user": {
-                "id": "abc123",
-                "name": "Adam"
-            },
-            "category": "animal welfare",
-            "organizer": "Adam",
-            "title": "Cat Cabaret",
-            "description": "Yay felines!",
-            "location": "Meow Town",
-            "date": "2019-01-03T21:54:00.000Z",
-            "time": "2:00",
-            "attendees": [1, 2, 3]
-        },
-        {
-            "id": 8419988,
-            "user": {
-                "id": "abc123",
-                "name": "Adam"
-            },
-            "category": "animal welfare",
-            "organizer": "Adam",
-            "title": "Kitty Cluster",
-            "description": "Yay cats!",
-            "location": "Catlandia",
-            "date": "2019-01-31T22:09:00.000Z",
-            "time": "7:00",
-            "attendees": []
-        },
-        {
-            "id": 4582797,
-            "user": {
-                "id": "abc123",
-                "name": "Adam"
-            },
-            "category": "animal welfare",
-            "organizer": "Adam",
-            "title": "Puppy Parade",
-            "description": "Yay pups!",
-            "location": "Puptown ",
-            "date": "2019-02-02T23:27:00.000Z",
-            "time": "1:00",
-            "attendees": []
-        }
-    ]
+  "events": [
+    {
+      "id": 5928101,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Cat Cabaret",
+      "description": "Yay felines!",
+      "location": "Meow Town",
+      "date": "2019-01-03T21:54:00.000Z",
+      "time": "2:00",
+      "attendees": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": 8419988,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Kitty Cluster",
+      "description": "Yay cats!",
+      "location": "Catlandia",
+      "date": "2019-01-31T22:09:00.000Z",
+      "time": "7:00",
+      "attendees": []
+    },
+    {
+      "id": 4582797,
+      "user": {
+        "id": "abc123",
+        "name": "Adam"
+      },
+      "category": "animal welfare",
+      "organizer": "Adam",
+      "title": "Puppy Parade",
+      "description": "Yay pups!",
+      "location": "Puptown ",
+      "date": "2019-02-02T23:27:00.000Z",
+      "time": "1:00",
+      "attendees": []
+    },
+    {
+      "id": 2584294,
+      "user": {
+        "id": "abc123",
+        "name": "John Doe"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "John Doe"
+      },
+      "title": "Teste",
+      "description": "jaodjoiajsoidjoiaj",
+      "location": "São Paulo",
+      "date": "2020-04-16T19:19:00.000Z",
+      "time": "10:00",
+      "attendees": []
+    },
+    {
+      "id": 71035,
+      "user": {
+        "id": "abc123",
+        "name": "John Doe"
+      },
+      "category": "sustainability",
+      "organizer": {
+        "id": "abc123",
+        "name": "John Doe"
+      },
+      "title": "Henrique",
+      "description": "japodsjaojdj",
+      "location": "São Paulo",
+      "date": "2020-04-01T19:25:00.000Z",
+      "time": "22:00",
+      "attendees": []
+    }
+  ]
 }
