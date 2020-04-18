@@ -22,17 +22,19 @@ export default new Vuex.Store({
       { id: 3, text: '...', done: true },
       { id: 4, text: '...', done: false }
     ],
-    events: [
-      { id: 1, title: '...', organizer: '...' },
-      { id: 2, title: '...', organizer: '...' },
-      { id: 3, title: '...', organizer: '...' },
-      { id: 4, title: '...', organizer: '...' }
-    ]
+    events: [],
+    eventsTotal: ''
   },
   //? MUTATIONS - Funciona com um setter, sendo a forma principal de modificar o state
   mutations: {
     ADD_EVENT(state, event) {
       state.events.push(event)
+    },
+    SET_EVENTS(state, events) {
+      state.events = events
+    },
+    SET_EVENTS_TOTAL(state, total) {
+      state.eventsTotal = total
     }
   },
   //? ACTIONS - Executa o processamento da informação e executa/commit por meio das mutations
@@ -41,6 +43,16 @@ export default new Vuex.Store({
       return EventService.postEvent(event).then(() => {
         commit('ADD_EVENT', event)
       })
+    },
+    fetchEvents({ commit }, { page, perPage }) {
+      EventService.getEvents(page, perPage)
+        .then(response => {
+          commit('SET_EVENTS', response.data)
+          commit('SET_EVENTS_TOTAL', response.headers['x-total-count'])
+        })
+        .catch(error => {
+          console.log('There was an error', error.response)
+        })
     }
   },
   //? GETTERS - São utilizados para requisitar informação do state de forma global(de qualquer parte do projeto)
